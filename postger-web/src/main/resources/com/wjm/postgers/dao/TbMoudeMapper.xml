@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wjm.postgers.dao.TbMoudeMapper">
+  <resultMap id="BaseResultMap" type="com.wjm.postgers.domain.TbMoude">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="rid" jdbcType="INTEGER" property="rid" />
+    <result column="isleaf" jdbcType="INTEGER" property="isleaf" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+  </resultMap>
+  <select id="getId" resultType="int" >
+    select nextval('tb_moude_id_seq')
+  </select>
+</mapper>
